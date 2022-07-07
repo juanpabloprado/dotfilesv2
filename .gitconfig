@@ -1,8 +1,6 @@
-[core]
-  editor = code --wait
 [user]
-  email = mads379@gmail.com
-  name = Mads Hartmann
+  email = juan@juanpabloprado.com
+  name = Juan Prado
 [pager]
   branch = false
 [alias]
