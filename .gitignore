@@ -17,11 +17,17 @@
 .gem/
 .go/
 .idlerc/
+.kube
 .lesshst
 .local/
 .node-gyp/
 .node_repl_history
+.m2
 .npm/
+.oh-my-zsh/
+.okta/
+.saml2aws
+.sdkman/
 .ssh
 .circleci
 .npmrc
@@ -46,6 +52,9 @@
 .terraform.d/
 .terraform.versions/
 
+.testcontainers.properties
+
+.idea
 .vscode
 .vscode-glitch
 
@@ -64,6 +73,7 @@ javasharedresources
 # Mac stuff
 .Trash
 Applications/
+Bitso/
 Calibre Library/
 Desktop/
 Documents/
