@@ -45,7 +45,7 @@
 .parallel
 .swt
 .augeas
-.gnupg
+.gnupg/
 .subversion
 .tldrc
 
@@ -53,6 +53,7 @@
 .terraform.versions/
 
 .testcontainers.properties
+.gradle/
 
 .idea
 .vscode
