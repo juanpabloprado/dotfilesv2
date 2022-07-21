@@ -30,3 +30,5 @@ RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
 if [ -f ~/.bash_profile ]; then
     . ~/.bash_profile;
 fi
+
+export EDITOR=vi
