@@ -1,0 +1,93 @@
+# Easier navigation: .., ..., ~ and -
+alias ..="cd .."
+alias cd..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+
+# mv, rm, cp
+alias mv='mv -v'
+alias rm='rm -i -v'
+alias cp='cp -v'
+
+alias chmox='chmod -x'
+
+alias where=which # sometimes i forget
+alias brwe=brew  #typos
+
+alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
+
+alias ag='ag -f --hidden'
+
+###
+# GIT STUFF
+
+function clone() {
+    git clone --depth=1 $1
+    cd $(basename ${1%.*})
+    yarn install
+}
+
+alias ga="g add"
+alias gc="g commit"
+alias gco="g checkout"
+alias gcm="gco master"
+alias gd="g diff"
+alias gst="g status"
+alias gl="g pull"
+alias gp="g push"
+alias push="git push"
+
+# Undo a `git push`
+alias undopush="git push -f origin HEAD^:master"
+
+# git root
+alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
+
+alias prc='gh pr create --web'
+alias prv='gh pr view --web'
+
+alias dc='docker compose'
+alias dcu='docker compose up'
+alias dcl='docker compose logs'
+
+alias k='kubectl'
+alias kl='k logs'
+alias kgp='k get pods'
+
+alias gitmainormaster="git branch --format '%(refname:short)' --sort=-committerdate --list master main | head -n1"
+alias main="git checkout \$(gitmainormaster)"
+alias master="main"
+
+
+# Networking. IP address, dig, DNS
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+# alias dig="dig +nocmd any +multiline +noall +answer"
+# wget sucks with certificates. Let's keep it simple.
+alias wget="curl -O"
+
+# Recursively delete `.DS_Store` files
+alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
+
+alias diskspace_report="df -P -kHl"
+alias free_diskspace_report="diskspace_report"
+
+# Shortcuts
+alias g="git"
+alias gi="git"
+alias v="vim"
+alias ungz="gunzip -k"
+
+# File size
+alias fs="stat -f \"%z bytes\""
+
+# Empty the Trash on all mounted volumes and the main HDD. then clear the useless sleepimage
+alias emptytrash=" \
+    sudo rm -rfv /Volumes/*/.Trashes; \
+    rm -rfv ~/.Trash/*; \
+    sudo rm -v /private/var/vm/sleepimage; \
+    rm -rv \"/Users/juanprado/Library/Application Support/stremio/Cache\";  \
+    rm -rv \"/Users/juanprado/Library/Application Support/stremio/stremio-cache\" \
+"
