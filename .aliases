@@ -31,13 +31,25 @@ function clone() {
 }
 
 alias ga="g add"
+alias gm="g commit -m"
+alias gb="g branch"
 alias gc="g commit"
 alias gco="g checkout"
+alias gcom="gco main 2>/dev/null || gco master"
+alias gcos="gco staging"
+alias gcod="gco dev"
+alias gcob="g checkout -b"
 alias gcm="gco master"
 alias gd="g diff"
-alias gst="g status"
+alias gdc="g diff --cached"
+alias gs="g status"
 alias gl="g pull"
+alias gpom="g pull origin main 2>/dev/null || g pull origin master"
+alias gpos="g pull origin staging"
+alias gpod="g pull origin dev"
+alias gf="g fetch"
 alias gp="g push"
+alias gmm="g merge main 2>/dev/null || g merge master"
 alias push="git push"
 
 # Undo a `git push`
