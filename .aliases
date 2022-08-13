@@ -70,7 +70,6 @@ alias k='kubectl'
 alias kl='k logs'
 alias kgp='k get pods'
 
-alias gra="gradle"
 alias grb="gradle build"
 alias grcb="gradle clean build"
 
