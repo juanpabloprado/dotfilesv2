@@ -46,6 +46,7 @@ alias gd="g diff"
 alias gdc="g diff --cached"
 alias gs="g status"
 alias gl="g pull"
+alias glg='git lg'
 alias gpom="gl origin main 2>/dev/null || gl origin master"
 alias gpos="gl origin staging"
 alias gpod="gl origin dev"
