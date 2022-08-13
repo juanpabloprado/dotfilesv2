@@ -53,6 +53,7 @@ alias gpod="gl origin dev"
 alias gf="g fetch"
 alias gp="g push"
 alias gmm="g merge main 2>/dev/null || g merge master"
+alias grh="g hreset"
 
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
