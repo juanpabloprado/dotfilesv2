@@ -33,7 +33,7 @@ function clone() {
 alias ga="g add"
 alias gaa="ga . && gs"
 alias gm="g commit -m"
-alias gam="ga . && gc -m"
+alias gam="ga . && gm"
 alias gb="g branch"
 alias gc="g commit"
 alias gco="g checkout"
