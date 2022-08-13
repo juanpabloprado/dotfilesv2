@@ -70,6 +70,18 @@ alias k='kubectl'
 alias kl='k logs'
 alias kgp='k get pods'
 
+alias gra="gradle"
+alias grb="gradle build"
+alias grcb="gradle clean build"
+
+alias ls="exa"
+alias ll="exa -alh"
+alias tree="exa --tree"
+
+if command -v bat > /dev/null; then
+    alias cat="bat"
+fi
+
 alias gitmainormaster="git branch --format '%(refname:short)' --sort=-committerdate --list master main | head -n1"
 alias main="git checkout \$(gitmainormaster)"
 alias master="main"
