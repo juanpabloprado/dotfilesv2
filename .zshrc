@@ -4,6 +4,7 @@
 # shellcheck disable=SC1090
 # It's okay that shellcheck can't read ~/.env, we don't need it to.
 [ -f ~/.env ] && source ~/.env
+[ -f ~/.functions ] && source ~/.functions
 
 # Put all the 3rd party completions scripts on my function path and enable
 # tab-completion.
