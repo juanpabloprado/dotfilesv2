@@ -16,7 +16,6 @@ brew missing
 
 echo "Update global packages installed by various package managers."
 npm update -g
-apm upgrade -c false
 
 echo "In case I've installed some things manually, update requirement files."
 npm list -g --depth=0 \
