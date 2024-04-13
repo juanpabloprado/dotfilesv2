@@ -130,12 +130,12 @@ alias mgs='mvn generate-sources'
 alias mrr='mvn release:prepare release:perform -DperformRelease=true -DignoreSnapshots=false'
 
 # java
-alias -g j='java'
-alias -g jc='javac'
-alias -g jj='java -jar'
-alias -g jv='java -version'
-alias -g jcv='javac -version'
-alias -g jp='javap -v -l -p -c -s'
+alias j='java'
+alias jc='javac'
+alias jj='java -jar'
+alias jv='java -version'
+alias jcv='javac -version'
+alias jp='javap -v -l -p -c -s'
 
 # File size
 alias fs="stat -f \"%z bytes\""
