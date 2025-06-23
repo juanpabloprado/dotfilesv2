@@ -76,9 +76,9 @@ alias kgp='k get pods'
 alias grb="gradle build"
 alias grcb="gradle clean build"
 
-alias ls="exa"
-alias ll="exa -alh"
-alias tree="exa --tree"
+alias ls="eza"
+alias ll="eza -alh"
+alias tree="eza --tree"
 
 if command -v bat > /dev/null; then
     alias cat="bat"
